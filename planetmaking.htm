@@ -1,0 +1,88 @@
+<html>
+<head>
+<style type="text/css">
+body {background-image: url("images/manifest.jpg")}
+</style>
+<link rel="stylesheet" type="text/css"
+href="stylesheet.css" />
+<title>Your First Spacebuild Planet</title>
+</head>
+<body>
+<MAP NAME="map1">
+	<area shape="rect" coords="395,143,445,186" href="index.htm" alt="" title=""/>
+	<area shape="rect" coords="452,141,537,186" href="tutorials.htm" alt="" title=""/>
+	<area shape="rect" coords="542,141,610,186" href="forums.htm" alt="" title=""/>
+	<area shape="rect" coords="612,141,663,186" href="files.htm" alt="" title=""/>
+	<area shape="rect" coords="664,141,717,186" href="links.htm" alt="" title=""/>
+	<area shape="rect" coords="721,141,823,186" href="contribute.htm" alt="" title=""/>
+</MAP>
+<br>
+<br>
+<div style="text-align: center;"><img src="images/banner.png" USEMAP="#map1" border="0"></div>
+<div id="content" style="text-align: justify;">
+<div id="innercontent" style="text-align: justify;">
+<br><br><br><br><br>
+
+
+
+<p id="entryheader">YOUR FIRST SPACEBUILD PLANET</p>
+<p id="entrytext">
+I started mapping first in Doom, and picked up an interest in mapping for Source for the ability to make my own
+worlds. It's for this reason that I find Spacebuild mapping particularly exciting because I actually CAN make my own worlds:
+whole planets for people to explore, conquer and enjoy. I often see new mappers on the Facepunch forums asking how to make a
+Spacebuild map, and planets are the meat and potatoes of your typical Spacebuild map. Fortunately, with the Planet Dev Kits
+provided first by Shanjaq and now Pelf, the hardest part is already done!<br><br>
+
+For this tutorial we're going to go step by step through the creation of your first spacebuild planet using Pelf's awesome Planet 
+Dev Kit, which you can find <a id="hyperlink" href="files/EnhancedDevKit.zip">HERE</a>. Let's get started....<br><br><br>
+
+<b>First Things First...</b><br><br>
+If you haven't already, open up Pelf's Planet Dev Kit and extract the files to someplace convenient. I keep them in a folder on my desktop
+as I'm always using them. Start up Hammer and open up one of the prefab planets from the kit. Select All, and then Copy. Close out the 
+prefab file and open a new map, then paste the prefab into the new map.<br><br>
+
+<img src="images/firstplanet/pic1.png"><br><br>
+
+<b>Bordering On Insanity...</b><br><br>
+So now that we have our platform on which to build the planet, the next thing we need to do is make a border that prevents players from
+just walking off the edge of the planet. This is done easily with the Arch tool. On top of your planet, make a new brush the same size of
+your planet and set the arch tool to 12 sides. Set the texture to 'tools/clip.'<br><br>
+
+<img src="images/firstplanet/pic2.png"><br><br>
+
+Place the mouse cursor over the outline of the brush and press enter. You'll be prompted with the Arch Properties menu. Enter the values 
+below:<br><br>
+
+<img src="images/firstplanet/pic3.png"><br><br>
+
+Click ok, and there's your border! You'll notice that with Pelf's prefabs the border may not match up with the edges of the planet properly.
+This isn't a huge problem, as the barrier will be invisible in-game. You can offset this by manually adjusting the size of the barrier to 
+your liking. It's still not going to be pretty, but it'll work just fine.<br><br>
+
+<img src="images/firstplanet/pic4.png"><br><br>
+
+<b>The Fun Begins...</b><br><br>
+On to the fun part: designing your planet! From here on in it's up to you. Find a good ground texture, play with displacements, build landing
+pads, buildings, bases, lakes, caves, whatever!<br><br>
+
+<img src="images/firstplanet/pic5.png"><br><br>
+
+One final tip before we call it a day, When you're making your Spacebuild map it's a good idea to build each planet on a separate map, rather
+than building the whole map at once. Since by nature Spacebuild maps are so huge, a map full of really detailed planets will take a LONG time to compile.
+Building each planet separately allows for faster compile times which makes it a LOT easier to debug and make quick changes to your planet.<br><br>
+
+I'll be covering how to make the planet's atmosphere (SB2 & SB3) as well as creating exterior planet shells in separate tutorials.<br><br>
+
+-Bynari
+</p>
+
+
+
+
+
+<br><br><br><br><br><br>
+</div>
+</div>
+
+</body>
+</html>

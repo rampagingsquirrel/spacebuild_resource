@@ -1,0 +1,50 @@
+#content {
+  margin: -40px;
+  width: 830px ;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-color: #333333;
+  border-right: #808080 2px solid;
+  padding-right: 2px;
+  border-left: #808080 2px solid;
+  padding-left: 2px;
+  border-bottom: #808080 2px solid;
+  padding-bottom: 2px;
+  border-top: #808080 2px solid;
+  padding-top; 2px;
+  background-image: url(images/filler.png);
+}
+
+#entryheader {
+
+font-family: sans-serif;
+font-size: x-large;
+font-weight: bold;
+color: #cccccc;
+}
+
+#entrytext {
+font-family: sans-serif;
+color: #cccccc;
+}
+
+#innercontent {
+  margin: -40px;
+  width: 750px ;
+  margin-left: auto ;
+  margin-right: auto ;
+ }
+ 
+ #filesection{
+
+font-family: sans-serif;
+font-size: medium;
+font-weight: bold;
+color: #cccccc;
+}
+
+#hyperlink {
+
+font-family: sans-serif;
+font-weight: bold;
+color: green;

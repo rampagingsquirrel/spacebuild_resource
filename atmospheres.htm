@@ -1,0 +1,249 @@
+<html>
+<head>
+<style type="text/css">
+body {background-image: url("images/manifest.jpg")}
+</style>
+<link rel="stylesheet" type="text/css"
+href="stylesheet.css" />
+<title>Atmospheres, or: logic_cases and You</title>
+</head>
+<body>
+<MAP NAME="map1">
+	<area shape="rect" coords="395,143,445,186" href="index.htm" alt="" title=""/>
+	<area shape="rect" coords="452,141,537,186" href="tutorials.htm" alt="" title=""/>
+	<area shape="rect" coords="542,141,610,186" href="forums.htm" alt="" title=""/>
+	<area shape="rect" coords="612,141,663,186" href="files.htm" alt="" title=""/>
+	<area shape="rect" coords="664,141,717,186" href="links.htm" alt="" title=""/>
+	<area shape="rect" coords="721,141,823,186" href="contribute.htm" alt="" title=""/>
+</MAP>
+<br>
+<br>
+<div style="text-align: center;"><img src="images/banner.png" USEMAP="#map1" border="0"></div>
+<div id="content" style="text-align: justify;">
+<div id="innercontent" style="text-align: justify;">
+<br><br><br><br><br>
+
+
+
+<p id="entryheader">ATMOSPHERES, OR: LOGIC_CASES AND YOU</p>
+<p id="entrytext">
+You've spent hours painstakingly sculpting your displacements, placing your trees, building your launch platforms, and building your buildings.
+Now that your brand new planet is complete, the next step is to set up its atmosphere. Spacebuild atmospheres are defined by a logic_case entity
+located at the center of the planet. These logic_cases simply contain values such as the radius of the planet, how strong the gravity should be,
+temperature in the shade or in the light, and in the case of Spacebuild 3 the percentage of Oxygen, Carbon Dioxide, Nitrogen, Hydrogen, and finally,
+the name of the planet. To begin, simply create a logic_case entity and place it at the center of your planet.<br><br>
+
+<img src="images/atmospheres/image01.png"><br><br>
+
+Open up the properties for the logic_case, and you'll see a list of Case 01, Case02, etc and blank spots to specify their values. This is where you'll
+define the environment of your planet.<br><br>
+
+<img src="images/atmospheres/image02.png"><br><br>
+
+<b>Spacebuild 2</b><br><br>
+
+Spacebuild 3 may be the current version of Spacebuild, but don't count out Spacebuild 2. SB2 is still fairly popular, and your time wouldn't be wasted
+by making versions of your map for both gamemodes. The following table will show you how to enter your values into the logic_case entity.<br><br>
+
+<table border="1">
+<tr>
+<th>Logic Case</th>
+<th>Environment Data</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><b>Case 01</b></td>
+<td>planet</td>
+<td>Tells SB2 that this is planet. Should just say 'planet'</td>
+</tr>
+<tr>
+<td><b>Case 02</b></td>
+<td>Radius</td>
+<td>The radius of the planet. This is half of the planet's diameter, so a planet with a diameter of 4096 would have a radius of 2048</td>
+</tr>
+<tr>
+<td><b>Case 03</b></td>
+<td>Gravity</td>
+<td>A value of '1' here means earth gravity. '.5' would be half earth's gravity, and '2' is double.</td>
+</tr>
+<tr>
+<td><b>Case 04</b></td>
+<td>Pressure</td>
+<td>'1' is earth pressure. Anything above '1' will crush you!</td>
+</tr>
+<td><b>Case 05</b></td>
+<td>Temperature</td>
+<td>288 is earth temperature, 14 is space. Burn damage will begin at 300, and will increase as the number goes up.</td>
+</tr>
+<td><b>Case 06</b></td>
+<td>Temperature (Shade)</td>
+<td>Same as above, but applies to players in the shade.</td>
+</tr>
+<td><b>Case 16</b></td>
+<td>Flags</td>
+<td>These are special attributes of a planet. See the next table below for a list of the flags and their uses.</td>
+</tr>
+</table><br><br>
+
+Case 16 contains flags that define special attributes of the planet in question. These flags tell the gamemode if the planet is habitable, or 
+if it is a burning planet (instant death!), or if there are earthquakes. The flags' numbers are defined in the table below: <br><br>
+
+<table border="1">
+<tr>
+<th>Flag</th>
+<th>Effect</th>
+</tr>
+<tr>
+<td><b>0</b></td>
+<td>No Flags</td>
+</tr>
+<tr>
+<td><b>1</b></td>
+<td>Habitable</td>
+</tr>
+<tr>
+<td><b>2</b></td>
+<td>Quakes</td>
+</tr>
+<tr>
+<td><b>3</b></td>
+<td>Habitable and Quakes</td>
+</tr>
+<tr>
+<td><b>4</b></td>
+<td>Sun Burns</td>
+</tr>
+<tr>
+<td><b>5</b></td>
+<td>Habitable and Sun Burns</td>
+</tr>
+<tr>
+<td><b>6</b></td>
+<td>Sun Burns and Quakes</td>
+</tr>
+<tr>
+<td><b>7</b></td>
+<td>Habitable, Sun Burns and Quakes</td>
+</tr>
+</table><br><br>
+
+<b>Spacebuild 3</b><br><br>
+
+The major difference that Spacebuild 3 brings to the table is the addition of dynamic environments. Essentially, each planet can have a
+percentage of four gasses: Oxygen, Nitrogen, Hydrogen and Carbon Dioxide. During gameplay, these values can be modified by the player through 
+the use of compressors and terraforming equipment. The following table describes how to configure your logic_case to work with Spacebuild 3.
+<br><br>
+
+<table border="1">
+<tr>
+<th>Logic Case</th>
+<th>Environment Data</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><b>Case 01</b></td>
+<td>planet2</td>
+<td>Tells SB3 that this is planet. Should just say 'planet2'</td>
+</tr>
+<tr>
+<td><b>Case 02</b></td>
+<td>Radius</td>
+<td>The radius of the planet. This is half of the planet's diameter, so a planet with a diameter of 4096 would have a radius of 2048</td>
+</tr>
+<tr>
+<td><b>Case 03</b></td>
+<td>Gravity</td>
+<td>A value of '1' here means earth gravity. '.5' would be half earth's gravity, and '2' is double.</td>
+</tr>
+<tr>
+<td><b>Case 04</b></td>
+<td>Atmosphere</td>
+<td>This value controls the density of the planet's atmosphere, making the quantity of available gasses adjustable. Use '1' as a standard earth baseline</td>
+</tr>
+<td><b>Case 05</b></td>
+<td>Pressure</td>
+<td>Can be used to create planets with crushing atmospheres. Values above '1' deal damage on an increasing scale</td>
+</tr>
+<td><b>Case 06</b></td>
+<td>Temperature (Shade)</td>
+<td>Same as below, but applies to players in the shade.</td>
+</tr>
+<td><b>Case 07</b></td>
+<td>Temperature</td>
+<td>288 is earth temperature, 14 is space. Burn damage will begin at 300, and will increase as the number goes up.</td>
+</tr>
+<td><b>Case 08</b></td>
+<td>Flags</td>
+<td>These are special attributes of a planet. See the next table below for a list of the flags and their uses.</td>
+</tr>
+</tr>
+<td><b>Case 09</b></td>
+<td>O2 Percentage</td>
+<td>Percentage of Oxygen available on a planet.</td>
+</tr>
+<td><b>Case 10</b></td>
+<td>CO2 Percentage</td>
+<td>Percentage of Carbon Dioxide available on a planet.</td>
+</tr>
+<td><b>Case 11</b></td>
+<td>N Percentage</td>
+<td>Percentage of Nitrogen available on a planet.</td>
+</tr>
+<td><b>Case 12</b></td>
+<td>H Percentage</td>
+<td>Percentage of Hydrogen available on a planet.</td>
+</tr>
+<td><b>Case 13</b></td>
+<td>Planet Name</td>
+<td>Enter the name of your planet and it will appear whenever the player arrives at your planet!</td>
+</tr>
+</table><br><br>
+
+Case 08 contains flags that define special attributes of the planet in question. These flags tell the gamemode if the planet is a burning planet
+(instant death!), or if there are earthquakes. The flags' numbers are defined in the table below: <br><br>
+
+<table border="1">
+<tr>
+<th>Flag</th>
+<th>Effect</th>
+</tr>
+<tr>
+<td><b>0</b></td>
+<td>No Flags</td>
+</tr>
+<tr>
+<td><b>1</b></td>
+<td>Quakes</td>
+</tr>
+<tr>
+<td><b>2</b></td>
+<td>Sun Burns</td>
+</tr>
+<tr>
+<td><b>3</b></td>
+<td>Sun Burns and Quakes</td>
+</tr>
+</table><br><br>
+
+<b>Layered Environments</b><br><br>
+In Spacebuild 2 & 3 you can create layered environments, meaning you can have an environment within an environment! For example
+if you create a large environment without oxygen on a planet, and then place a smaller environment which contains oxygen <i>inside</i>
+the original environment, you will have a small habitable 'bubble' inside the larger uninhabitable environment.<br><br>
+
+Well, those are the basics. Have fun creating unique environments!<br><br>
+
+-Bynari 
+
+
+
+</p>
+
+
+
+
+<br><br><br><br><br><br>
+</div>
+</div>
+
+</body>
+</html>
